@@ -1,0 +1,22 @@
+h1 {
+  font-size: 80px;
+  color: orange;
+}
+
+div h2 {
+  font-size: 50px;
+  color: red;
+  font-family: monospace;
+}
+
+p {
+  font-style: italic;
+  font-size: 20px;
+  color: green;
+}
+
+div > p {
+  font-size: 30px;
+  color: blue;
+  font-family: sans-serif;;
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE Biblioteka SYSTEM "biblioteka.dtd">
+<Biblioteka>
+    <Książka ISBN="9788374802932" Język="PL">
+        <Tytuł>Ślepowidzenie</Tytuł>
+        <Autorzy>
+            <Autor>
+                <Imie>Jan</Imie>
+                <Nazwisko>&brze;</Nazwisko>
+            </Autor>
+            <Autor>
+                <Imie>Thomas</Imie>
+                <Nazwisko>Wayden</Nazwisko>
+            </Autor>
+        </Autorzy>
+        <RokWydania NumerWydania="2">2015</RokWydania>
+    </Książka>
+    <Książka ISBN="9788308041789" Język="PL">
+        <Tytuł>Droga</Tytuł>
+        <Autorzy>
+            <Autor>
+                <Imie>Cormac</Imie>
+                <Nazwisko>&brze;</Nazwisko>
+            </Autor>
+        </Autorzy>
+        <RokWydania NumerWydania="2">2000</RokWydania>
+    </Książka>
+    <Książka ISBN="9788324018796" Język="PL">
+        <Tytuł>Ulisses</Tytuł>
+        <Autorzy>
+            <Autor>
+                <Imie>James</Imie>
+                <Nazwisko>Joyce</Nazwisko>
+            </Autor>
+        </Autorzy>
+        <RokWydania NumerWydania="3">1964</RokWydania>
+    </Książka>
+    <Książka ISBN="9788301441789">
+        <Tytuł>Droga do nieba</Tytuł>
+        <Autorzy>
+            <Autor>
+                <Imie>Ross</Imie>
+                <Nazwisko>Cormac</Nazwisko>
+            </Autor>
+        </Autorzy>
+        <RokWydania NumerWydania="1">2000</RokWydania>
+    </Książka>
+</Biblioteka>

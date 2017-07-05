@@ -1,0 +1,72 @@
+<Biblioteka>
+  <Książka ISBN="9788374802932">
+    <Tytuł>Ślepowidzenie</Tytuł>
+      <Autorzy>
+        <Autor>
+          <Nazwisko>Watts</Nazwisko>
+          <Imie>Peter</Imie>
+        </Autor>
+        <Autor>
+          <Nazwisko>Wayden</Nazwisko>
+          <Imie>Thomas</Imie>
+        </Autor>
+      </Autorzy>
+    <Rok_wydania year="2015" />
+    <Wydawnictwo>Helios</Wydawnictwo>
+  </Książka>
+  <Książka ISBN="9788308041789">
+    <Tytuł>Droga</Tytuł>
+    <Autor>
+      <Nazwisko>McCarthy</Nazwisko>
+      <Imie>Cormac</Imie>
+    </Autor>
+    <Rok_wydania year="2000" />
+    <Wydawnictwo>PWN</Wydawnictwo>
+  </Książka>
+  <Książka ISBN="9788324018796" Język="PL">
+    <Tytuł>Ulisses</Tytuł>
+    <Autor>
+      <Nazwisko>Joyce</Nazwisko>
+      <Imie>James</Imie>
+    </Autor>
+    <Przekład>
+      <Nazwisko>Słomczyński</Nazwisko>
+      <Imie>Maciej</Imie>
+    </Przekład>
+    <Rok_wydania year="1963" />
+    <Wydawnictwo>Agora</Wydawnictwo>
+  </Książka>
+  <Książka ISBN="9788301441789">
+    <Tytuł>Droga do nieba</Tytuł>
+    <Autor>
+      <Nazwisko>Cormac</Nazwisko>
+      <Imie>Ross</Imie>
+    </Autor>
+    <Rok_wydania year="2002" />
+    <Wydawnictwo>PWN</Wydawnictwo>
+  </Książka>
+  <Książka ISBN="9788308101789">
+    <Tytuł>Sukces</Tytuł>
+    <Autorzy>
+      <Autor>
+        <Nazwisko>Watts</Nazwisko>
+        <Imie>Peter</Imie>
+      </Autor>
+      <Autor>
+        <Nazwisko>Hayden</Nazwisko>
+        <Imie>Thomas</Imie>
+      </Autor>
+    </Autorzy>
+    <Rok_wydania year="2001" />
+    <Wydawnictwo>Agora</Wydawnictwo>
+  </Książka>
+  <Książka ISBN="9788304241789">
+    <Tytuł>Życie na Ziemi</Tytuł>
+    <Autor>
+      <Nazwisko>Johnson</Nazwisko>
+      <Imie>Adam</Imie>
+    </Autor>
+    <Rok_wydania year="1999" />
+    <Wydawnictwo>GWE</Wydawnictwo>
+  </Książka>
+</Biblioteka>

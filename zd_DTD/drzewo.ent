@@ -1,0 +1,5 @@
+<Obiekt Nazwa="Drzewo" ID="0001">
+  <Kategoria>Natura</Kategoria>
+  <Opis>Najważniejszy obiekt naturalny.</Opis>
+  <Wielkość>10</Wielkość>
+</Obiekt>

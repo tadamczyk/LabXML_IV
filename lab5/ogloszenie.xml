@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE Ogloszenie [
+  <!ELEMENT Ogloszenie (Samochód+)>
+  <!ELEMENT Samochód (Producent, Model, Silnik, Kolor, LiczbaMiejsc)>
+  <!ELEMENT Producent (#PCDATA)>
+  <!ELEMENT Model (#PCDATA)>
+  <!ELEMENT Silnik (Typ, Pojemność)>
+  <!ELEMENT Typ (#PCDATA)>
+  <!ELEMENT Pojemność (#PCDATA)>
+  <!ELEMENT Kolor (#PCDATA)>
+  <!ELEMENT LiczbaMiejsc (#PCDATA)>
+  <!ENTITY producer "Audi">
+]>
+<Ogloszenie>
+  <Samochód>
+    <Producent>&producer;</Producent>
+    <Model>Q7</Model>
+    <Silnik>
+      <Typ>Benzyna</Typ>
+      <Pojemność>4.0</Pojemność>
+    </Silnik>
+    <Kolor>Grafitowy</Kolor>
+    <LiczbaMiejsc>7</LiczbaMiejsc>
+  </Samochód>
+</Ogloszenie>

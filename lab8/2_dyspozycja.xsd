@@ -1,0 +1,31 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.inf.ug.edu.pl/xsd" xmlns="http://www.inf.ug.edu.pl/xsd" elementFormDefault="qualified">
+  <xs:include schemaLocation="urzadzenia.xsd"/>
+
+  <xs:complexType name="UrządzeniaTyp">
+    <xs:sequence>
+      <xs:element name="Rzutnik" type="RzutnikTyp" minOccurs="1" maxOccurs="4"/>
+      <xs:element name="Komputer" type="KomputerTyp" minOccurs="0" maxOccurs="4"/>
+      <xs:element name="Słuchawki" type="SłuchawkiTyp" minOccurs="0" maxOccurs="2"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SalaTyp">
+    <xs:all>
+      <xs:element name="NumerSali" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="LiczbaMiejsc" type="xs:positiveInteger" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Ekran" minOccurs="0" maxOccurs="1"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="DyspozycjaTyp">
+    <xs:sequence>
+      <xs:element name="Sala" type="SalaTyp" minOccurs="1" maxOccurs="3"/>
+      <xs:element name="Urządzenia" type="UrządzeniaTyp"/>
+    </xs:sequence>
+    <xs:attribute name="DzieńPoczątkowy" type="xs:date" use="required"/>
+    <xs:attribute name="DzieńKońcowy" type="xs:date" use="required"/>
+  </xs:complexType>
+
+  <xs:element name="Dyspozycja" type="DyspozycjaTyp"/>
+
+</xs:schema>

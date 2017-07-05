@@ -1,0 +1,19 @@
+new_personal.xml zawiera dodatową osobę w pliku (po <person id="three.worker">...</person>):
+
+<person id="six.worker">
+  <name>
+    <family>Worker</family>
+    <given>Six</given>
+  </name>
+  <email>six@foo.com</email>
+  <link manager="Big.Boss"/>
+</person>
+
+W linii nr 72 pobieramy pierwszy wywołany argument (a raczej jego zawartość,
+zawartość dokumentu XML):
+
+document = builder.parseURI(args[0]);
+
+A w linii nr 108 wypisujemy zawartość nowo powstałego dokumentu do pliku "new_personal.xml":
+
+dOut.setByteStream(new FileOutputStream("new_" + args[0]));

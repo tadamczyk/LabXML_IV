@@ -1,0 +1,10 @@
+<!ELEMENT Sklep (Zamowienie+)>
+<!ELEMENT Zamowienie (Produkt+)>
+<!ELEMENT Produkt (Nazwa, Cena, (Ilosc|Sztuk))>
+<!ELEMENT Nazwa (#PCDATA)>
+<!ELEMENT Cena (#PCDATA)>
+<!ELEMENT Ilosc (#PCDATA)>
+<!ELEMENT Sztuk (#PCDATA)>
+<!ATTLIST Produkt ID CDATA #REQUIRED>
+<!ATTLIST Cena Waluta CDATA #REQUIRED>
+<!ATTLIST Ilosc Jednostka CDATA #REQUIRED>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="drzewo.xsl"?>
+
+<Wezel xmlns="http://www.inf.ug.edu.pl/xsd/drzewo">
+  <Wezel>
+    <Wezel>
+      <Wezel>
+        <Wezel>
+          <Lisc Liczba="45" />
+        </Wezel>
+      </Wezel>
+      <Wezel>
+        <Wezel>
+          <Lisc Liczba="64" />
+        </Wezel>
+        <Wezel>
+          <Lisc Liczba="177" />
+          <Lisc Liczba="7" />
+        </Wezel>
+      </Wezel>
+      <Wezel>
+        <Lisc Liczba="91" />
+      </Wezel>
+    </Wezel>
+    <Lisc />
+    <Wezel>
+      <Lisc Liczba="9" />
+      <Wezel>
+        <Wezel>
+          <Lisc Liczba="97" />
+          <Lisc Liczba="234" />
+        </Wezel>
+        <Lisc Liczba="497" />
+        <Wezel>
+          <Lisc Liczba="86" />
+        </Wezel>
+      </Wezel>
+    </Wezel>
+  </Wezel>
+  <Wezel>
+    <Lisc Liczba="62" />
+  </Wezel>
+  <Wezel>
+    <Wezel>
+      <Wezel>
+        <Wezel>
+          <Lisc Liczba="27" />
+          <Lisc Liczba="83" />
+        </Wezel>
+        <Wezel>
+          <Wezel>
+            <Lisc Liczba="47" />
+          </Wezel>
+        </Wezel>
+      </Wezel>
+    </Wezel>
+    <Wezel>
+      <Wezel>
+        <Lisc Liczba="1" />
+        <Lisc Liczba="0" />
+        <Lisc Liczba="100" />
+      </Wezel>
+      <Wezel>
+        <Wezel>
+          <Lisc Liczba="38" />
+        </Wezel>
+        <Wezel>
+          <Lisc Liczba="1" />
+        </Wezel>
+        <Lisc Liczba="27" />
+      </Wezel>
+    </Wezel>
+  </Wezel>
+</Wezel>

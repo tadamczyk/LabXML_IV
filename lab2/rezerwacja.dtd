@@ -1,0 +1,24 @@
+<!ELEMENT Rezerwacja (Pasażerowie, Segmenty, Uwaga*)>
+<!ELEMENT Pasażerowie (Pasażer+)>
+<!ELEMENT Pasażer (Imię, Nazwisko, Wiek, Niepełnosprawny?)>
+<!ELEMENT Imię (#PCDATA)>
+<!ELEMENT Nazwisko (#PCDATA)>
+<!ELEMENT Wiek (#PCDATA)>
+<!ELEMENT Niepełnosprawny EMPTY>
+<!ELEMENT Segmenty (Segment+)>
+<!ELEMENT Segment (Start, Cel, Przewoźnik?, (Cena|CenaNieznana))>
+<!ELEMENT Start (Czas, Miejsce)>
+<!ELEMENT Cel (Czas, Miejsce)>
+<!ELEMENT Czas EMPTY>
+<!ELEMENT Miejsce (#PCDATA)>
+<!ELEMENT Przewoźnik (#PCDATA)>
+<!ELEMENT Cena (#PCDATA)>
+<!ELEMENT CenaNieznana EMPTY>
+<!ELEMENT Uwaga (#PCDATA)>
+<!ATTLIST Pasażer ID CDATA #REQUIRED>
+<!ATTLIST Segment Typ (Lot|Pociąg|Samochód) #REQUIRED>
+<!ATTLIST Segment NumerRezerwacji CDATA #IMPLIED>
+<!ATTLIST Czas Data CDATA #REQUIRED>
+<!ATTLIST Czas Godzina CDATA #REQUIRED>
+<!ATTLIST Cena Waluta (PLN|EUR) #REQUIRED>
+<!ATTLIST Uwaga Nr CDATA #REQUIRED>

@@ -1,0 +1,37 @@
+<d:Dyspozycja DzieńPoczątkowy="2017-03-11" DzieńKońcowy="2017-03-15" xmlns:d="http://www.inf.ug.edu.pl/xsd">
+  <d:Sala>
+    <d:NumerSali>25</d:NumerSali>
+    <d:LiczbaMiejsc>30</d:LiczbaMiejsc>
+    <d:Ekran/>
+  </d:Sala>
+  <d:Sala>
+    <d:NumerSali>24</d:NumerSali>
+    <d:LiczbaMiejsc>36</d:LiczbaMiejsc>
+  </d:Sala>
+  <d:Urządzenia>
+    <d:Rzutnik Właściciel="Jan Nowak" NumerIdentyfikacyjny="AZ123" NumerSeryjny="1">
+      <d:Producent>Panasonic</d:Producent>
+      <d:Model>A200</d:Model>
+      <d:Rozdzielczość>1200x1600</d:Rozdzielczość>
+      <d:ŻywotnośćLampy>3000</d:ŻywotnośćLampy>
+    </d:Rzutnik>
+    <d:Rzutnik Właściciel="Jan Nowacki" NumerIdentyfikacyjny="AZ124" NumerSeryjny="2">
+      <d:Producent>Panasonic</d:Producent>
+      <d:Model>A200</d:Model>
+      <d:Rozdzielczość>1200x1600</d:Rozdzielczość>
+      <d:ŻywotnośćLampy>3000</d:ŻywotnośćLampy>
+    </d:Rzutnik>
+    <d:Rzutnik Właściciel="Janina Nowak" NumerIdentyfikacyjny="AZ125" NumerSeryjny="3">
+      <d:Producent>Panasonic</d:Producent>
+      <d:Model>A200</d:Model>
+      <d:Rozdzielczość>1200x1600</d:Rozdzielczość>
+      <d:ŻywotnośćLampy>3000</d:ŻywotnośćLampy>
+    </d:Rzutnik>
+    <d:Komputer Właściciel="Jan Nowak" NumerIdentyfikacyjny="A111" NumerSeryjny="111">
+      <d:Producent>Toshiba</d:Producent>
+      <d:Model>Satellllite A200</d:Model>
+      <d:Typ>Desktop</d:Typ>
+      <d:ŻywotnośćLampy>3000</d:ŻywotnośćLampy>
+    </d:Komputer>
+  </d:Urządzenia>
+</d:Dyspozycja>

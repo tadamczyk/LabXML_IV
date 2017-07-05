@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE Mapa SYSTEM "mapa.dtd">
+<Mapa>
+  <Kafelek ID="1" PoczątekX="0" PoczątekY="0" KoniecX="10" KoniecY="10">
+    <ObiektStatyczny PoczątekX="2" PoczątekY="2" KoniecX="3" KoniecY="3">
+      &drzewo;
+    </ObiektStatyczny>
+    <ObiektStatyczny PoczątekX="5" PoczątekY="5" KoniecX="6" KoniecY="6">
+      &krzak;
+    </ObiektStatyczny>
+  </Kafelek>
+  <Kafelek ID="2" PoczątekX="10" PoczątekY="0" KoniecX="20" KoniecY="10">
+    <ObiektStatyczny PoczątekX="12" PoczątekY="2" KoniecX="13" KoniecY="3">
+      &kamien;
+    </ObiektStatyczny>
+    <ObiektStatyczny PoczątekX="15" PoczątekY="5" KoniecX="17" KoniecY="7">
+      &staw;
+    </ObiektStatyczny>
+  </Kafelek>
+  <Kafelek ID="3" PoczątekX="20" PoczątekY="0" KoniecX="30" KoniecY="10">
+    <ObiektStatyczny PoczątekX="22" PoczątekY="2" KoniecX="23" KoniecY="3">
+      &mur;
+    </ObiektStatyczny>
+    <ObiektStatyczny PoczątekX="20" PoczątekY="0" KoniecX="22" KoniecY="2">
+      &wieza;
+    </ObiektStatyczny>
+  </Kafelek>
+  <Kafelek ID="4" PoczątekX="30" PoczątekY="0" KoniecX="40" KoniecY="10">
+    <ObiektStatyczny PoczątekX="30" PoczątekY="0" KoniecX="31" KoniecY="1">
+      &grob;
+    </ObiektStatyczny>
+    <ObiektStatyczny PoczątekX="35" PoczątekY="5" KoniecX="36" KoniecY="6">
+      &studnia;
+    </ObiektStatyczny>
+    <ObiektStatyczny PoczątekX="31" PoczątekY="0" KoniecX="32" KoniecY="1">
+      &grob;
+    </ObiektStatyczny>
+  </Kafelek>
+  <Kafelek ID="5" PoczątekX="0" PoczątekY="10" KoniecX="10" KoniecY="20">
+    <ObiektStatyczny PoczątekX="2" PoczątekY="12" KoniecX="3" KoniecY="13">
+      &krzak;
+    </ObiektStatyczny>
+    <ObiektStatyczny PoczątekX="6" PoczątekY="15" KoniecX="7" KoniecY="16">
+      &mur;
+    </ObiektStatyczny>
+  </Kafelek>
+  <Kafelek ID="6" PoczątekX="10" PoczątekY="10" KoniecX="20" KoniecY="20">
+    <ObiektStatyczny PoczątekX="15" PoczątekY="12" KoniecX="16" KoniecY="13">
+      &wieza;
+    </ObiektStatyczny>
+    <ObiektStatyczny PoczątekX="11" PoczątekY="18" KoniecX="13" KoniecY="20">
+      &staw;
+    </ObiektStatyczny>
+  </Kafelek>
+  <Kafelek ID="7" PoczątekX="20" PoczątekY="10" KoniecX="30" KoniecY="20">
+    <ObiektStatyczny PoczątekX="23" PoczątekY="12" KoniecX="24" KoniecY="13">
+      &kamien;
+    </ObiektStatyczny>
+    <ObiektStatyczny PoczątekX="24" PoczątekY="17" KoniecX="25" KoniecY="18">
+      &krzak;
+    </ObiektStatyczny>
+  </Kafelek>
+  <Kafelek ID="8" PoczątekX="30" PoczątekY="10" KoniecX="40" KoniecY="20">
+    <ObiektStatyczny PoczątekX="32" PoczątekY="12" KoniecX="33" KoniecY="13">
+      &drzewo;
+    </ObiektStatyczny>
+    <ObiektStatyczny PoczątekX="38" PoczątekY="13" KoniecX="40" KoniecY="15">
+      &studnia;
+    </ObiektStatyczny>
+  </Kafelek>
+</Mapa>

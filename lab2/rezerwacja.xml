@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE Rezerwacja SYSTEM "rezerwacja.dtd">
+<Rezerwacja>
+  <Pasażerowie>
+    <Pasażer ID="1">
+      <Imię>Umberto</Imię>
+      <Nazwisko>Eco</Nazwisko>
+      <Wiek>60</Wiek>
+    </Pasażer>
+    <Pasażer ID="2">
+      <Imię>Andrea</Imię>
+      <Nazwisko>Philips</Nazwisko>
+      <Wiek>54</Wiek>
+      <Niepełnosprawny />
+    </Pasażer>
+  </Pasażerowie>
+  <Segmenty>
+    <Segment Typ="Pociąg">
+      <Start>
+        <Czas Data="11-03-2017" Godzina="23:27" />
+        <Miejsce>Gdańsk</Miejsce>
+      </Start>
+      <Cel>
+        <Czas Data="12-03-2017" Godzina="03:01" />
+        <Miejsce>Warszawa</Miejsce>
+      </Cel>
+      <Przewoźnik>PKP</Przewoźnik>
+      <Cena Waluta="PLN">159</Cena>
+    </Segment>
+    <Segment Typ="Lot" NumerRezerwacji="ATRGAT">
+      <Start>
+        <Czas Data="12-03-2017" Godzina="04:11" />
+        <Miejsce>Warszawa</Miejsce>
+      </Start>
+      <Cel>
+        <Czas Data="12-03-2017" Godzina="06:24" />
+        <Miejsce>Rzym</Miejsce>
+      </Cel>
+      <Przewoźnik>Etihad Airways</Przewoźnik>
+      <Cena Waluta="EUR">348</Cena>
+    </Segment>
+    <Segment Typ="Samochód">
+      <Start>
+        <Czas Data="12-03-2017" Godzina="07:53" />
+        <Miejsce>Rzym</Miejsce>
+      </Start>
+      <Cel>
+        <Czas Data="12-03-2017" Godzina="08:39" />
+        <Miejsce>Obok Rzymu</Miejsce>
+      </Cel>
+      <Cena Waluta="EUR">17</Cena>
+    </Segment>
+    <Segment Typ="Samochód">
+      <Start>
+        <Czas Data="12-03-2017" Godzina="014:18" />
+        <Miejsce>Obok Rzymu</Miejsce>
+      </Start>
+      <Cel>
+        <Czas Data="12-03-2017" Godzina="19:52" />
+        <Miejsce>Rzym</Miejsce>
+      </Cel>
+      <CenaNieznana />
+    </Segment>
+  </Segmenty>
+  <Uwaga Nr="1">Lubię frytki.</Uwaga>
+  <Uwaga Nr="2">Miejsce przy oknie.</Uwaga>
+</Rezerwacja>

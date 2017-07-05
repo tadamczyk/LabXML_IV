@@ -1,0 +1,27 @@
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://www.inf.ug.edu.pl/xsd/sklep_muzyczny"
+  targetNamespace="http://www.inf.ug.edu.pl/xsd/sklep_muzyczny"
+  elementFormDefault="qualified">
+
+  <xs:simpleType name="TypLiczbyNaturalne">
+    <xs:restriction base="xs:decimal">
+      <xs:minExclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TypKrótkiTekst">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TypDługiTekst">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="250"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

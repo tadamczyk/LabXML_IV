@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="4_backend.xsl"?>
+
+<Repertuar>
+  <Film ID="080154">
+    <Tytul>Wolny król</Tytul>
+    <Rezyser Imie="Rambert" Nazwisko="Rochus"/>
+    <Budżet>130507000</Budżet>
+    <RokProdukcji>2015</RokProdukcji>
+    <Dlugosc>103</Dlugosc>
+    <Gatunek>Familijny</Gatunek>
+    <Obsada>
+      <Aktor Imie="Valtteri" Nazwisko="Atticus"/>
+      <Aktor Imie="Rihard" Nazwisko="Yasamin"/>
+    </Obsada>
+    <Projekcja>
+      <Czas>
+        <Wtorek Godzina="18"/>
+        <Sroda Godzina="18"/>
+        <Czwartek Godzina="19"/>
+      </Czas>
+      <CenaBiletu>15</CenaBiletu>
+      <NrSali>3</NrSali>
+    </Projekcja>
+  </Film>
+  <Film ID="081435">
+    <Tytul>Podwójny honor</Tytul>
+    <Rezyser Imie="Clarence" Nazwisko="Pavli"/>
+    <Budżet>240567000</Budżet>
+    <RokProdukcji>2016</RokProdukcji>
+    <Dlugosc>130</Dlugosc>
+    <Gatunek>Wojenny</Gatunek>
+    <MinWiek>16</MinWiek>
+    <Obsada>
+      <Aktor Imie="Prisca" Nazwisko="Tezcatlipoca"/>
+      <Aktor Imie="Naila" Nazwisko="Tymon"/>
+      <Aktor Imie="Pooja" Nazwisko="Jitendra"/>
+      <Aktor Imie="Vidya" Nazwisko="Wigmar"/>
+    </Obsada>
+    <Projekcja>
+      <Czas>
+        <Poniedzialek Godzina="20"/>
+        <Sroda Godzina="20"/>
+        <Piatek Godzina="20"/>
+      </Czas>
+      <CenaBiletu>20</CenaBiletu>
+      <NrSali>2</NrSali>
+    </Projekcja>
+  </Film>
+  <Film ID="079954">
+    <Tytul>Żołnierz ekstremizmu</Tytul>
+    <Rezyser Imie="Rambert" Nazwisko="Rochus"/>
+    <Budżet>114301200</Budżet>
+    <RokProdukcji>2017</RokProdukcji>
+    <Dlugosc>108</Dlugosc>
+    <Gatunek>Wojenny</Gatunek>
+    <MinWiek>12</MinWiek>
+    <Obsada>
+      <Aktor Imie="Naila" Nazwisko="Tymon"/>
+    </Obsada>
+    <Projekcja>
+      <Czas>
+        <Sobota Godzina="17"/>
+      </Czas>
+      <CenaBiletu>20</CenaBiletu>
+      <NrSali>1</NrSali>
+    </Projekcja>
+  </Film>
+  <Film ID="078951">
+    <Tytul>Mistrz upokorzenia</Tytul>
+    <Rezyser Imie="Desiree" Nazwisko="Sameer"/>
+    <Budżet>39867000</Budżet>
+    <RokProdukcji>2016</RokProdukcji>
+    <Dlugosc>87</Dlugosc>
+    <Gatunek>Dramat</Gatunek>
+    <MinWiek>16</MinWiek>
+    <Obsada>
+      <Aktor Imie="Denzil" Nazwisko="Clio"/>
+      <Aktor Imie="Valtteri" Nazwisko="Atticus"/>
+      <Aktor Imie="Severiano" Nazwisko="Samoil"/>
+      <Aktor Imie="Elvira" Nazwisko="Uma"/>
+    </Obsada>
+    <Projekcja>
+      <Czas>
+        <Czwartek Godzina="18"/>
+        <Piatek Godzina="21"/>
+        <Sobota Godzina="20"/>
+        <Niedziela Godzina="20"/>
+      </Czas>
+      <CenaBiletu>11</CenaBiletu>
+      <NrSali>1</NrSali>
+    </Projekcja>
+  </Film>
+  <Film ID="081423">
+    <Tytul>Niebieski długopis</Tytul>
+    <Rezyser Imie="Luciano" Nazwisko="Remanja"/>
+    <Budżet>41050600</Budżet>
+    <RokProdukcji>2017</RokProdukcji>
+    <Dlugosc>92</Dlugosc>
+    <Gatunek>Horror</Gatunek>
+    <MinWiek>18</MinWiek>
+    <Obsada>
+      <Aktor Imie="Rihard" Nazwisko="Yasamin"/>
+      <Aktor Imie="Naila" Nazwisko="Tymon"/>
+      <Aktor Imie="Jessika" Nazwisko="Orel"/>
+    </Obsada>
+    <Projekcja>
+      <Czas>
+        <Poniedzialek Godzina="18"/>
+        <Wtorek Godzina="21"/>
+        <Sroda Godzina="22"/>
+      </Czas>
+      <CenaBiletu>17</CenaBiletu>
+      <NrSali>3</NrSali>
+    </Projekcja>
+  </Film>
+</Repertuar>

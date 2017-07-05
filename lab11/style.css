@@ -1,0 +1,55 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  text-align: center;
+  background: rgb(200, 200, 200);
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+table {
+  border: 2px solid #aaa;
+  border-collapse: collapse;
+  margin: 5% 5% 5% 5%;
+  padding: 0;
+  width: 90%;
+  table-layout: fixed;
+  text-align: center;
+}
+
+table tr {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: .625em;
+  font-size: .75em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.vat {
+  background: red;
+}
+
+.novat {
+  background: green;
+}
+
+.over16 {
+  background: orange;
+}
+
+.over12 {
+  background: yellow;
+}

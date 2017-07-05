@@ -1,0 +1,52 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.inf.ug.edu.pl/xsd" xmlns="https://www.inf.ug.edu.pl/xsd" elementFormDefault="qualified">
+  <xs:include schemaLocation="2_segment.xsd"/>
+
+  <xs:complexType name="INTyp">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="Wymowa" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="PasażerTyp">
+    <xs:sequence>
+      <xs:element name="Imię" type="INTyp"/>
+      <xs:element name="Nazwisko" type="INTyp"/>
+      <xs:element name="Wiek" type="xs:positiveInteger"/>
+      <xs:element name="Niepełnosprawny" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="ID" type="xs:positiveInteger"/>
+  </xs:complexType>
+
+  <xs:complexType name="PasażerowieTyp">
+    <xs:sequence>
+      <xs:element name="Pasażer" type="PasażerTyp" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SegmentyTyp">
+    <xs:sequence>
+      <xs:element name="Segment" type="SegmentTyp" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="UwagaTyp" mixed="true">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="Nr" type="xs:positiveInteger"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="RezerwacjaTyp">
+    <xs:sequence>
+      <xs:element name="Pasażerowie" type="PasażerowieTyp"/>
+      <xs:element name="Segmenty" type="SegmentyTyp"/>
+      <xs:element name="Uwaga" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="Rezerwacja" type="RezerwacjaTyp"/>
+
+</xs:schema>

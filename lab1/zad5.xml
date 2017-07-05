@@ -1,0 +1,74 @@
+<Podróż>
+  <Rezerwacja id="1">
+    <Osoby>
+      <Osoba stan="dorosły">
+        <Nazwisko>Skrzypiec</Nazwisko>
+        <Imie>Witold</Imie>
+      </Osoba>
+      <Osoba stan="dorosły">
+        <Nazwisko>Skrzypiec</Nazwisko>
+        <Imie>Joanna</Imie>
+      </Osoba>
+      <Osoba stan="dziecko">
+        <Nazwisko>Skrzypiec</Nazwisko>
+        <Imie>Adam</Imie>
+      </Osoba>
+    </Osoby>
+    <Transport>
+      <Autobus id="213">
+        <Przewoźnik>Sinbad</Przewoźnik>
+        <Początek>
+          <Miejsce>Gdańsk - Wrzeszcz</Miejsce>
+          <Czas>
+            <Dzień>26.01.2017</Dzień>
+            <Godzina>8:00</Godzina>
+          </Czas>
+        </Początek>
+        <Koniec>
+          <Miejsce>Gdańsk - Lotnisko</Miejsce>
+          <Czas>
+            <Dzień>26.01.2017</Dzień>
+            <Godzina>9:00</Godzina>
+          </Czas>
+        </Koniec>
+        <Opłata cena="50" waluta="PLN" />
+      </Autobus>
+      <Samolot id="212">
+        <Przewoźnik>Lot</Przewoźnik>
+        <Początek>
+          <Miejsce>Gdańsk</Miejsce>
+          <Czas>
+            <Dzień>26.01.2017</Dzień>
+            <Godzina>11:00</Godzina>
+          </Czas>
+        </Początek>
+        <Koniec>
+          <Miejsce>Madryt</Miejsce>
+          <Czas>
+            <Dzień>26.01.2017</Dzień>
+            <Godzina>15:00</Godzina>
+          </Czas>
+        </Koniec>
+        <Opłata cena="500" waluta="EUR" />
+      </Samolot>
+      <Autobus id="1278">
+        <Przewoźnik>SpainTrans</Przewoźnik>
+        <Początek>
+          <Miejsce>Madryt - Airport</Miejsce>
+          <Czas>
+            <Dzień>26.01.2017</Dzień>
+            <Godzina>16:00</Godzina>
+          </Czas>
+        </Początek>
+        <Koniec>
+          <Miejsce>Madryt - Mercure</Miejsce>
+          <Czas>
+            <Dzień>26.01.2017</Dzień>
+            <Godzina>16:30</Godzina>
+          </Czas>
+        </Koniec>
+        <Opłata cena="50" waluta="EUR" />
+      </Autobus>
+    </Transport>
+  </Rezerwacja>
+</Podróż>

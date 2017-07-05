@@ -1,0 +1,63 @@
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:mstns="http://www.inf.ug.edu.pl/xsd/sklep_muzyczny"
+  xmlns="http://www.inf.ug.edu.pl/xsd/sklep_muzyczny"
+  targetNamespace="http://www.inf.ug.edu.pl/xsd/sklep_muzyczny"
+  elementFormDefault="qualified">
+
+  <xs:include schemaLocation="akcesoria.xsd"/>
+
+  <xs:simpleType name="TypID">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z][A-Z][0-9][0-9][0-9][0-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="TypRodzajTowaru">
+    <xs:choice>
+      <xs:element name="Gitara" type="TypGitary"/>
+      <xs:element name="Akcesorium" type="TypAkcesoria"/>
+    </xs:choice>
+    <xs:attribute name="ID" type="TypID" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="TypDostępnościTowaru">
+    <xs:choice>
+      <xs:element name="LiczbaSztuk" type="TypLiczbyNaturalne"/>
+      <xs:element name="NaZamówienie"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:simpleType name="TypNumerTowaru">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{4}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="TypTowaru">
+    <xs:sequence>
+      <xs:element name="Przedmiot" type="TypRodzajTowaru" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Dostępność" type="TypDostępnościTowaru" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="Cena" type="TypLiczbyNaturalne" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="Numer" type="TypNumerTowaru" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="TypSklepu">
+    <xs:sequence minOccurs="1" maxOccurs="unbounded">
+      <xs:element name="Towar" type="TypTowaru"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="SklepMuzyczny" type="TypSklepu">
+    <xs:unique name="NUMER">
+      <xs:selector xpath="mstns:Towar"/>
+      <xs:field xpath="@Numer"/>
+    </xs:unique>
+    <xs:unique name="IDENTYFIKATOR">
+      <xs:selector xpath="mstns:Towar/mstns:Przedmiot"/>
+      <xs:field xpath="@ID"/>
+    </xs:unique>
+  </xs:element>
+
+</xs:schema>

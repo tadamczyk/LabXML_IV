@@ -1,0 +1,37 @@
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://www.inf.ug.edu.pl/xsd/sklep_muzyczny"
+  targetNamespace="http://www.inf.ug.edu.pl/xsd/sklep_muzyczny"
+  elementFormDefault="qualified">
+
+  <xs:include schemaLocation="typy_podstawowe.xsd"/>
+
+  <xs:group name="GrupaPodstawoweElementy">
+    <xs:sequence>
+      <xs:element name="Producent" type="TypKrótkiTekst"/>
+      <xs:element name="Model" type="TypKrótkiTekst"/>
+      <xs:element name="Opis" type="TypDługiTekst"/>
+    </xs:sequence>
+  </xs:group>
+
+  <xs:simpleType name="TypRodzajeGitar">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="klasyczna|akustyczna|elektryczna|hawajska"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="TypGitary">
+    <xs:sequence>
+      <xs:group ref="GrupaPodstawoweElementy"/>
+    </xs:sequence>
+    <xs:attribute name="Rodzaj" type="TypRodzajeGitar" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="TypAkcesoria">
+    <xs:sequence>
+      <xs:group ref="GrupaPodstawoweElementy"/>
+    </xs:sequence>
+    <xs:attribute name="Typ" type="TypKrótkiTekst" use="required"/>
+  </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,51 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.inf.ug.edu.pl/xsd" xmlns="http://www.inf.ug.edu.pl/xsd" elementFormDefault="qualified">
+
+  <xs:attributeGroup name="UrządzeniaAtrybuty">
+    <xs:attribute name="Właściciel" type="xs:string"/>
+    <xs:attribute name="NumerIdentyfikacyjny" type="xs:string"/>
+    <xs:attribute name="NumerSeryjny" type="xs:string"/>
+    <xs:attribute name="Sala" type="xs:positiveInteger"/>
+  </xs:attributeGroup>
+
+  <xs:group name="UrządzeniaElementy">
+    <xs:sequence>
+      <xs:element name="Producent" type="xs:string"/>
+      <xs:element name="Model" type="xs:string"/>
+    </xs:sequence>
+  </xs:group>
+
+  <xs:complexType name="RzutnikTyp">
+    <xs:sequence>
+      <xs:group ref="UrządzeniaElementy"/>
+      <xs:element name="Rozdzielczość" type="xs:string"/>
+      <xs:element name="ŻywotnośćLampy" type="xs:positiveInteger"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="UrządzeniaAtrybuty"/>
+  </xs:complexType>
+
+  <xs:complexType name="KomputerTyp">
+    <xs:sequence>
+      <xs:group ref="UrządzeniaElementy"/>
+      <xs:element name="Typ" type="TypKomputeraTyp"/>
+      <xs:element name="ŻywotnośćLampy" type="xs:positiveInteger"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="UrządzeniaAtrybuty"/>
+  </xs:complexType>
+
+  <xs:simpleType name="TypKomputeraTyp">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Desktop"/>
+      <xs:enumeration value="Mobile"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="SłuchawkiTyp">
+    <xs:sequence>
+      <xs:group ref="UrządzeniaElementy"/>
+      <xs:element name="Słuchawki" minOccurs="0"/>
+      <xs:element name="PojemnośćBaterii" type="xs:positiveInteger"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="UrządzeniaAtrybuty"/>
+  </xs:complexType>
+
+</xs:schema>

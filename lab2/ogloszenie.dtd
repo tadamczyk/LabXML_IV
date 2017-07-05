@@ -1,0 +1,9 @@
+<!ELEMENT Ogloszenie (Samochód+)>
+<!ELEMENT Samochód (Producent, Model, Silnik, Kolor, LiczbaMiejsc)>
+<!ELEMENT Producent (#PCDATA)>
+<!ELEMENT Model (#PCDATA)>
+<!ELEMENT Silnik (Typ, Pojemność)>
+<!ELEMENT Typ (#PCDATA)>
+<!ELEMENT Pojemność (#PCDATA)>
+<!ELEMENT Kolor (#PCDATA)>
+<!ELEMENT LiczbaMiejsc (#PCDATA)>

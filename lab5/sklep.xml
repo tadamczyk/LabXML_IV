@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE Sklep SYSTEM "sklep.dtd">
+<Sklep>
+  <Zamowienie>
+    <Produkt ID="1">
+      <Nazwa>Kawa rozpuszczalna</Nazwa>
+      <Cena Waluta="PL">19.99</Cena>
+      <Ilosc Jednostka="KG">2</Ilosc>
+    </Produkt>
+    <Produkt ID="10">
+      <Nazwa>Woda mineralna</Nazwa>
+      <Cena Waluta="PL">0.99</Cena>
+      <Sztuk>12</Sztuk>
+    </Produkt>
+  </Zamowienie>
+</Sklep>

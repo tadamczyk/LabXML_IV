@@ -1,0 +1,73 @@
+<r:Rezerwacja xmlns:r="https://www.inf.ug.edu.pl/xsd">
+  <r:Pasażerowie>
+    <r:Pasażer ID="1">
+      <r:Imię>Umberto</r:Imię>
+      <r:Nazwisko Wymowa="iko">Eco</r:Nazwisko>
+      <r:Wiek>60</r:Wiek>
+    </r:Pasażer>
+    <r:Pasażer ID="2">
+      <r:Imię>Andrea</r:Imię>
+      <r:Nazwisko Wymowa="filips">Philips</r:Nazwisko>
+      <r:Wiek>54</r:Wiek>
+      <r:Niepełnosprawny/>
+    </r:Pasażer>
+  </r:Pasażerowie>
+  <r:Segmenty>
+    <r:Segment>
+      <r:Pociąg>
+        <r:Start>
+          <r:Czas Data="2017-03-11" Godzina="23:27:00"/>
+          <r:Miejsce Szerokosc="N54" Dlugosc="E18">Gdańsk</r:Miejsce>
+        </r:Start>
+        <r:Cel>
+          <r:Czas Data="2017-03-12" Godzina="03:01:00"/>
+          <r:Miejsce>Warszawa</r:Miejsce>
+        </r:Cel>
+        <r:Przewoźnik>PKP</r:Przewoźnik>
+        <r:RodzajWagonu>Przedziałowy</r:RodzajWagonu>
+        <r:Cena Waluta="PLN">159</r:Cena>
+      </r:Pociąg>
+    </r:Segment>
+    <r:Segment>
+      <r:Lot NumerRezerwacji="ATRGAT">
+        <r:Start>
+          <r:Czas Data="2017-03-12" Godzina="04:11:00"/>
+          <r:Miejsce>Warszawa</r:Miejsce>
+        </r:Start>
+        <r:Cel>
+          <r:Czas Data="2017-03-12" Godzina="06:24:00"/>
+          <r:Miejsce>Rzym</r:Miejsce>
+        </r:Cel>
+        <r:Przewoźnik>Etihad Airways</r:Przewoźnik>
+        <r:Cena Waluta="EUR">348</r:Cena>
+      </r:Lot>
+    </r:Segment>
+    <r:Segment>
+      <r:Samochód>
+        <r:Start>
+          <r:Czas Data="2017-03-12" Godzina="07:53:00"/>
+          <r:Miejsce>Rzym</r:Miejsce>
+        </r:Start>
+        <r:Cel>
+          <r:Czas Data="2017-03-12" Godzina="08:39:00"/>
+          <r:Miejsce>Obok Rzymu</r:Miejsce>
+        </r:Cel>
+        <r:Cena Waluta="EUR">17</r:Cena>
+      </r:Samochód>
+    </r:Segment>
+    <r:Segment>
+      <r:Samochód>
+        <r:Start>
+          <r:Czas Data="2017-03-12" Godzina="14:18:00"/>
+          <r:Miejsce>Obok Rzymu</r:Miejsce>
+        </r:Start>
+        <r:Cel>
+          <r:Czas Data="2017-03-12" Godzina="19:52:00"/>
+          <r:Miejsce Szerokosc="N41" Dlugosc="E12">Rzym</r:Miejsce>
+        </r:Cel>
+      </r:Samochód>
+    </r:Segment>
+  </r:Segmenty>
+  <r:Uwaga Nr="1">Lubię frytki.</r:Uwaga>
+  <r:Uwaga Nr="2">Miejsce przy oknie.</r:Uwaga>
+</r:Rezerwacja>

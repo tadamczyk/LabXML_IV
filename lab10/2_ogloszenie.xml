@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="2_backend.xsl"?>
+
+<Ogłoszenie>
+  <Samochód>
+    <Producent>Audi</Producent>
+    <Model>Q7</Model>
+    <Silnik>
+      <Typ>Benzyna</Typ>
+      <Pojemność>4.0</Pojemność>
+    </Silnik>
+    <Kolor>Grafitowy</Kolor>
+    <LiczbaMiejsc>7</LiczbaMiejsc>
+    <Cena Waluta="PLN">152000</Cena>
+  </Samochód>
+
+  <Samochód>
+    <Producent>Audi</Producent>
+    <Model>A4</Model>
+    <Silnik>
+      <Typ>Diesel</Typ>
+      <Pojemność>1.9</Pojemność>
+    </Silnik>
+    <Kolor>Bordowy</Kolor>
+    <LiczbaMiejsc>5</LiczbaMiejsc>
+    <Cena Waluta="PLN">16000</Cena>
+  </Samochód>
+</Ogłoszenie>

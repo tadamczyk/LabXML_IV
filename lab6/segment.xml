@@ -1,0 +1,12 @@
+<s:Segment xmlns:s="https://www.inf.ug.edu.pl/xsd/segment" Typ="Lot" NumerRezerwacji="ATRGAT">
+  <s:Start>
+    <s:Czas Data="2017-03-12" Godzina="04:11:00"/>
+    <s:Miejsce>Warszawa</s:Miejsce>
+  </s:Start>
+  <s:Cel>
+    <s:Czas Data="2017-03-12" Godzina="06:24:00"/>
+    <s:Miejsce>Rzym</s:Miejsce>
+  </s:Cel>
+  <s:Przewoźnik>Etihad Airways</s:Przewoźnik>
+  <s:Cena Waluta="EUR">348</s:Cena>
+</s:Segment>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html>
+<head>
+  <title>Laboratorium nr 4</title>
+</head>
+<body>
+  <h1>Funkcja Dirichleta</h1>
+    <math>Funkcja charakterystyczna zbioru liczb wymiernych Q, tzn. funkcja zmiennej rzeczywistej,
+    która przyjmuje wartość 1, gdy argument jest liczbą wymierną i wartość 0, gdy argument jest liczbą niewymierną.</math><br />
+    <math>Formalnie funkcję Dirichleta można zapisać wzorem:</math><br />
+    <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+      <msub>
+        <mn mathvariant='bold'>1</mn>
+        <mi mathvariant='bold'>Q</mi>
+      </msub>
+      <mo>&ApplyFunction;</mo>
+      <mfenced><mi mathvariant='bold'>x</mi></mfenced>
+      <mo>=</mo>
+      <mfenced open='{' close='' separators=''>
+        <mtable columnalign='left'>
+        <mtr>
+          <mtd><mn>1</mn></mtd>
+          <mtd>
+            <mo>dla</mo>
+            <mi>x</mi><mo>&isin;</mo><mi mathvariant='bold'>Q</mi>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mn>0</mn>
+          </mtd>
+          <mtd>
+            <mo>dla</mo>
+            <mi>x</mi><mo>&notin;</mo><mi mathvariant='bold'>Q</mi>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mfenced>
+    </math>
+
+  <h1>Wzór Taylora z resztą Lagrange'a</h1>
+    <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+    <mi mathvariant='bold'>f</mi>
+    <mfenced><mi mathvariant='bold'>x</mi></mfenced>
+    <mo>=</mo>
+    <munderover>
+      <mo>&sum;</mo>
+      <mrow>
+        <mi>k</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mrow>
+      <mi>n</mi>
+    </munderover>
+    <mfenced separators=''>
+      <mfrac>
+        <mrow>
+          <msup>
+            <mfenced separators=''>
+              <mi>x</mi>
+              <mo>&minus;</mo>
+              <mi>a</mi>
+                </mfenced>
+                <mo>k</mo>
+              </msup>
+            </mrow>
+            <mrow>
+              <mn>k</mi><mo>!</mo>
+            </mrow>
+          </mfrac>
+          <msup>
+            <mrow>
+              <mi>f</mi>
+            </mrow>
+          <mn>(k)</mn>
+        </msup>
+        <mn>(a)</mn>
+        </mfenced>
+        <mo>+</mo>
+        <msub>
+          <mi>R</mi>
+          <mi>n</mi>
+        </msub>
+        <mfenced>
+          <mi>x</mi>
+          <mi>a</mi>
+        </mfenced>
+      </math><br />
+    <math xmlns='http://www.w3.org/1998/Math/MathML' display='block'>
+      <semantics>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mstyle displaystyle="true" scriptlevel="0">
+            <msub>
+              <mi mathvariant='bold'>R</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi mathvariant='bold'>n</mi>
+              </mrow>
+            </msub>
+            <mo stretchy="false" mathvariant='bold'>(</mo>
+            <mi mathvariant='bold'>x</mi>
+            <mo mathvariant='bold'>,</mo>
+            <mi mathvariant='bold'>a</mi>
+            <mo stretchy="false" mathvariant='bold'>)</mo>
+            <mo>=</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>x</mi>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>a</mi>
+                  <msup>
+                    <mo stretchy="false">)</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>+</mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msup>
+                </mrow>
+                <mrow>
+                  <mo stretchy="false">(</mo>
+                  <mi>n</mi>
+                  <mo>+</mo>
+                  <mn>1</mn>
+                  <mo stretchy="false">)</mo>
+                  <mo>!</mo>
+                </mrow>
+              </mfrac>
+            </mrow>
+            <msup>
+              <mi>f</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">(</mo>
+                <mi>n</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </msup>
+            <mo stretchy="false">(</mo>
+            <mi>a</mi>
+            <mo>+</mo>
+            <mi>&#x03B8;</mi>
+            <mo stretchy="false">(</mo>
+            <mi>x</mi>
+            <mo>-</mo>
+            <mi>a</mi>
+            <mo stretchy="false">)</mo>
+            <mo stretchy="false">)</mo>
+          </mstyle>
+        </mrow>
+      </semantics>
+    </math>
+
+  <h1>Instrument muzyczny</h1>
+    <svg width="640" height="200">^M
+      <ellipse cx="200" cy="100" rx="100" ry="80" style="fill: black; stroke: yellow; stroke-width: 2" />^M
+      <ellipse cx="200" cy="100" rx="20" ry="16" style="fill: white; stroke: black; stroke-width: 2" />^M
+      <ellipse cx="200" cy="100" rx="4" ry="3" style="fill: black; stroke: white; stroke-width: 2" />^M
+      <ellipse cx="360" cy="100" rx="100" ry="80" style="fill: black; stroke: yellow; stroke-width: 2" />^M
+      <ellipse cx="360" cy="100" rx="20" ry="16" style="fill: white; stroke: black; stroke-width: 2" />^M
+      <ellipse cx="360" cy="100" rx="4" ry="3" style="fill: black; stroke: white; stroke-width: 2" />^M
+    </svg>
+
+  <h1>Kontur Wydziału MFI</h1>
+    <svg width="560" height="200" xmlns="http://www.w3.org/2000/svg">
+      <rect id="svg_1" height="53.999999" width="228.000003" y="34" x="198.499996" stroke-width="1.5" stroke="#5656ff" fill="#5656ff"/>
+      <rect id="svg_2" height="51" width="337" y="121" x="9.5" stroke-width="1.5" stroke="#5656ff" fill="#5656ff"/>
+      <rect id="svg_4" height="52.000001" width="207" y="110.999999" x="339.5" stroke-width="1.5" stroke="#5656ff" fill="#5656ff"/>
+      <rect id="svg_5" height="12" width="41" y="88" x="198.5" stroke-width="1.5" stroke="#5656ff" fill="#5656ff"/>
+      <rect id="svg_7" height="33" width="24" y="88" x="239.5" stroke-width="1.5" stroke="#5656ff" fill="#5656ff"/>
+      <rect id="svg_8" height="8" width="33" y="88" x="394.5" stroke-width="1.5" stroke="#5656ff" fill="#5656ff"/>
+      <rect id="svg_9" height="23" width="21" y="88" x="374.5" stroke-width="1.5" stroke="#5656ff" fill="#5656ff"/>
+      <rect id="svg_10" height="62.000008" width="32" y="33.999999" x="426.5" stroke-width="1.5" stroke="#5656ff" fill="#5656ff"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_12" y2="32" x2="441.234256" y1="32" x1="407.5" stroke-width="1.5" stroke="#ff0000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_13" y2="33" x2="439.516125" y1="33" x1="408.5" stroke-width="1.5" stroke="#ff0000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_14" y2="75.166155" x2="197.5" y1="48" x1="197.5" stroke-width="1.5" stroke="#ff0000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_15" y2="74.70992" x2="198.5" y1="49" x1="198.5" stroke-width="1.5" stroke="#ff0000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_16" y2="148.194827" x2="546.5" y1="125" x1="546.5" stroke-width="1.5" stroke="#ff0000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_23" y2="125.445629" x2="547.99621" y1="148.998969" x1="547.99621" stroke-width="1.5" stroke="#ff0000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_24" y2="156.025219" x2="8.499942" y1="136.999053" x1="8.499942" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#ff0000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_26" y2="154.069094" x2="8.999938" y1="137.999046" x1="8.999938" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#ff0000" fill="none"/>
+      <text transform="matrix(6.341, 0, 0, 7.12851, -1095.29, -429.992)" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="2" id="svg_29" y="69.648814" x="196.702863" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#ff0000" fill="#000000">Wejście główne</text>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_32" y2="33.499769" x2="409.367107" y1="33.499769" x1="197.998632" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_33" y2="32.999772" x2="460.022444" y1="32.999772" x1="440.496955" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_34" y2="96.501301" x2="459.99682" y1="32.999772" x1="459.99682" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_35" y2="50.007465" x2="197.998632" y1="33.999765" x1="197.998632" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_36" y2="75.413084" x2="197.498635" y1="101.499298" x1="197.498635" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_37" y2="100.499305" x2="196.986445" y1="100.499305" x1="237.998355" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_38" y2="120.505576" x2="238.498352" y1="100.999302" x1="238.498352" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_39" y2="120.499167" x2="9.010265" y1="120.499167" x1="238.998348" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_41" y2="137.006404" x2="8.999938" y1="119.999171" x1="8.999938" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_42" y2="156.990852" x2="8.499942" y1="172.498808" x1="8.499942" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_43" y2="172.998804" x2="8.496623" y1="172.998804" x1="347.497598" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_44" y2="162.987516" x2="347.497598" y1="173.998797" x1="347.497598" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_45" y2="163.998866" x2="547.50624" y1="163.998866" x1="347.997595" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_46" y2="147.991403" x2="546.996219" y1="164.498863" x1="546.996219" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_48" y2="111.657564" x2="547.496215" y1="124.999136" x1="547.496215" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_49" y2="109.99924" x2="547.61498" y1="109.99924" x1="395.997263" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_50" y2="96.499333" x2="395.790567" y1="96.499333" x1="459.99682" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_52" y2="110.999233" x2="396.497259" y1="95.49934" x1="396.497259" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_53" y2="88.499388" x2="374.444709" y1="88.499388" x1="262.998182" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_54" y2="120.499167" x2="338.614236" y1="120.499167" x1="263.498179" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_55" y2="119.792142" x2="264.498172" y1="88.499388" x1="264.498172" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_56" y2="87.700291" x2="374.497411" y1="109.99924" x1="374.497411" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_57" y2="121.703859" x2="338.49766" y1="109.99924" x1="338.49766" stroke="#000000" fill="none"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_60" y2="110.499236" x2="375.729781" y1="110.499236" x1="338.49766" stroke-opacity="null" stroke-width="null" stroke="#000000" fill="none"/>
+    </svg>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="3_backend.xsl"?>
+
+<Zoo>
+  <Zwierz Gatunek="Ssaki" Gromada="ZajacPolarny">
+    <Wiek>3</Wiek>
+    <Masa>4.87</Masa>
+    <Dlugosc Jednostka="cm">43</Dlugosc>
+    <Plec>Samiec</Plec>
+    <Umaszczenie>Białe</Umaszczenie>
+  </Zwierz>
+  <Zwierz Gatunek="Ssaki" Gromada="KawiaDomowa">
+    <Wiek>2.9</Wiek>
+    <Masa>0.74</Masa>
+    <Dlugosc Jednostka="mm">221</Dlugosc>
+    <Plec>Samica</Plec>
+    <Umaszczenie>Czarne</Umaszczenie>
+  </Zwierz>
+  <Zwierz Gatunek="Ptaki" Gromada="PaszczakAustralijski">
+    <Wiek>1.2</Wiek>
+    <Masa>0.25</Masa>
+    <Dlugosc Jednostka="cm">47</Dlugosc>
+    <RozpietoscSkrzydel Jednostka="cm">48</RozpietoscSkrzydel>
+    <Plec>Samiec</Plec>
+  </Zwierz>
+  <Zwierz Gatunek="Ptaki" Gromada="Slonecznica">
+    <Wiek>3.2</Wiek>
+    <Masa>0.18</Masa>
+    <Dlugosc Jednostka="cm">44</Dlugosc>
+    <RozpietoscSkrzydel Jednostka="cm">74</RozpietoscSkrzydel>
+    <Plec>Samica</Plec>
+  </Zwierz>
+  <Zwierz Gatunek="Ptaki" Gromada="Rycyk">
+    <Wiek>4.2</Wiek>
+    <Masa>0.49</Masa>
+    <Dlugosc Jednostka="cm">45</Dlugosc>
+    <RozpietoscSkrzydel Jednostka="cm">78</RozpietoscSkrzydel>
+    <Plec>Samiec</Plec>
+  </Zwierz>
+  <Zwierz Gatunek="Gady" Gromada="ZolwSzylkretowy">
+    <Wiek>14</Wiek>
+    <Masa>82.3</Masa>
+    <Dlugosc Jednostka="cm">129</Dlugosc>
+    <Plec>Samiec</Plec>
+  </Zwierz>
+  <Zwierz Gatunek="Gady" Gromada="AmfisbenaEuropejska">
+    <Wiek>0.4</Wiek>
+    <Masa>0.02</Masa>
+    <Dlugosc Jednostka="cm">26</Dlugosc>
+    <Plec>Samiec</Plec>
+  </Zwierz>
+</Zoo>

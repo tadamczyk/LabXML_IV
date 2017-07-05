@@ -1,0 +1,26 @@
+<!ENTITY drzewo SYSTEM "drzewo.ent">
+<!ENTITY krzak SYSTEM "krzak.ent">
+<!ENTITY kamien SYSTEM "kamien.ent">
+<!ENTITY staw SYSTEM "staw.ent">
+<!ENTITY mur SYSTEM "mur.ent">
+<!ENTITY wieza SYSTEM "wieza.ent">
+<!ENTITY grob SYSTEM "grob.ent">
+<!ENTITY studnia SYSTEM "studnia.ent">
+<!ELEMENT Mapa (Kafelek+)>
+<!ELEMENT Kafelek (ObiektStatyczny+)>
+<!ATTLIST Kafelek ID CDATA #REQUIRED>
+<!ATTLIST Kafelek PoczątekX CDATA #REQUIRED>
+<!ATTLIST Kafelek PoczątekY CDATA #REQUIRED>
+<!ATTLIST Kafelek KoniecX CDATA #REQUIRED>
+<!ATTLIST Kafelek KoniecY CDATA #REQUIRED>
+<!ELEMENT ObiektStatyczny (Obiekt+)>
+<!ATTLIST ObiektStatyczny PoczątekX CDATA #REQUIRED>
+<!ATTLIST ObiektStatyczny PoczątekY CDATA #REQUIRED>
+<!ATTLIST ObiektStatyczny KoniecX CDATA #REQUIRED>
+<!ATTLIST ObiektStatyczny KoniecY CDATA #REQUIRED>
+<!ELEMENT Obiekt (Kategoria, Opis, Wielkość)>
+<!ELEMENT Kategoria (#PCDATA)>
+<!ELEMENT Opis (#PCDATA)>
+<!ELEMENT Wielkość (#PCDATA)>
+<!ATTLIST Obiekt ID CDATA #REQUIRED>
+<!ATTLIST Obiekt Nazwa CDATA #REQUIRED>

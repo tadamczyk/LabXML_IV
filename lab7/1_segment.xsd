@@ -1,0 +1,79 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.inf.ug.edu.pl/xsd" xmlns="https://www.inf.ug.edu.pl/xsd" elementFormDefault="qualified">
+
+  <xs:complexType name="CzasTyp">
+    <xs:attribute name="Data" type="xs:date"/>
+    <xs:attribute name="Godzina" type="xs:time"/>
+  </xs:complexType>
+
+  <xs:complexType name="BETyp">
+    <xs:sequence>
+      <xs:element name="Czas" type="CzasTyp"/>
+      <xs:element name="Miejsce">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="50"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="PrzewoźnikTyp">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="30"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PositiveDecimal">
+    <xs:restriction base="xs:decimal">
+      <xs:minExclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="CenaTyp" mixed="true">
+    <xs:simpleContent>
+      <xs:extension base="PositiveDecimal">
+        <xs:attribute name="Waluta">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="EUR|PLN|GBP|USD"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:simpleType name="TypTyp">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Lot"/>
+      <xs:enumeration value="Pociąg"/>
+      <xs:enumeration value="Samochód"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="NrRezerwacjiTyp">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="6"/>
+      <xs:maxLength value="18"/>
+      <xs:pattern value="[a-zA-Z0-9]*"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="SegmentTyp">
+    <xs:choice maxOccurs="unbounded">
+      <xs:element name="Start" type="BETyp"/>
+      <xs:element name="Cel" type="BETyp"/>
+      <xs:element name="Przewoźnik" type="PrzewoźnikTyp"/>
+      <xs:element name="Cena" type="CenaTyp"/>
+      <xs:element name="CenaNieznana"/>
+    </xs:choice>
+    <xs:attribute name="Typ" type="TypTyp" use="required"/>
+    <xs:attribute name="NumerRezerwacji" type="NrRezerwacjiTyp" use="optional"/>
+  </xs:complexType>
+
+  <xs:element name="Segment" type="SegmentTyp"/>
+
+</xs:schema>

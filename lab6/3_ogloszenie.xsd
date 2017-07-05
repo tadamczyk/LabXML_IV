@@ -1,0 +1,34 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.inf.ug.edu.pl/xsd/ogloszenie" xmlns="https://www.inf.ug.edu.pl/xsd/ogloszenie" elementFormDefault="qualified">
+
+  <xs:complexType name="SilnikTyp">
+    <xs:sequence>
+      <xs:element name="Pojemność" type="xs:positiveInteger"/>
+      <xs:element name="TypPaliwa" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CenaTyp">
+    <xs:choice>
+      <xs:element name="Wartość" type="xs:positiveInteger"/>
+      <xs:element name="DoUzgodnienia" type="xs:boolean"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="SamochódTyp">
+    <xs:sequence>
+      <xs:element name="Marka" type="xs:string"/>
+      <xs:element name="Silnik" type="SilnikTyp"/>
+      <xs:element name="RokProdukcji" type="xs:int"/>
+      <xs:element name="Cena" type="CenaTyp"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="OgłoszenieTyp">
+    <xs:sequence>
+      <xs:element name="Samochód" type="SamochódTyp"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="Ogłoszenie" type="OgłoszenieTyp"/>
+
+</xs:schema>

@@ -1,0 +1,106 @@
+<s:SklepMuzyczny xmlns:s="http://www.inf.ug.edu.pl/xsd/sklep_muzyczny">
+  <s:Towar Numer="0001">
+    <s:Przedmiot ID="GR0000">
+      <s:Gitara Rodzaj="klasyczna">
+        <s:Producent>Panasonic</s:Producent>
+        <s:Model>Classic N10</s:Model>
+        <s:Opis>Klasyczna gitara dla każdego.</s:Opis>
+      </s:Gitara>
+    </s:Przedmiot>
+    <s:Dostępność>
+      <s:LiczbaSztuk>20</s:LiczbaSztuk>
+    </s:Dostępność>
+    <s:Cena>999.99</s:Cena>
+  </s:Towar>
+  <s:Towar Numer="0002">
+    <s:Przedmiot ID="GR1000">
+      <s:Gitara Rodzaj="akustyczna">
+        <s:Producent>Panasonic</s:Producent>
+        <s:Model>Acu XYZ</s:Model>
+        <s:Opis>Akustyczna gitara dla początkującyh.</s:Opis>
+      </s:Gitara>
+    </s:Przedmiot>
+    <s:Dostępność>
+      <s:NaZamówienie/>
+    </s:Dostępność>
+    <s:Cena>1299.99</s:Cena>
+  </s:Towar>
+  <s:Towar Numer="0003">
+    <s:Przedmiot ID="CD0000">
+      <s:Akcesorium Typ="Płyta kompaktowa">
+        <s:Producent>FB Records</s:Producent>
+        <s:Model>Road to GOLD</s:Model>
+        <s:Opis>Płyta wytwórni muzycznej Fat Bass Polska Records z roku 2016.</s:Opis>
+      </s:Akcesorium>
+    </s:Przedmiot>
+    <s:Dostępność>
+      <s:LiczbaSztuk>2000</s:LiczbaSztuk>
+    </s:Dostępność>
+    <s:Cena>19.99</s:Cena>
+  </s:Towar>
+  <s:Towar Numer="0011">
+    <s:Przedmiot ID="GR2301">
+      <s:Gitara Rodzaj="elektryczna">
+        <s:Producent>Panasonic</s:Producent>
+        <s:Model>Electric Vol.2</s:Model>
+        <s:Opis>Energiczno-elektryczna gitara, budząca do życia.</s:Opis>
+      </s:Gitara>
+    </s:Przedmiot>
+    <s:Dostępność>
+      <s:LiczbaSztuk>6</s:LiczbaSztuk>
+    </s:Dostępność>
+    <s:Cena>1999.99</s:Cena>
+  </s:Towar>
+  <s:Towar Numer="0969">
+    <s:Przedmiot ID="DC1451">
+      <s:Akcesorium Typ="Mikser DJ'ski">
+        <s:Producent>Pioneer</s:Producent>
+        <s:Model>DJM900</s:Model>
+        <s:Opis>Kontroler Pioneer DJM900 z 2012 roku.</s:Opis>
+      </s:Akcesorium>
+    </s:Przedmiot>
+    <s:Dostępność>
+      <s:LiczbaSztuk>5</s:LiczbaSztuk>
+    </s:Dostępność>
+    <s:Cena>2500</s:Cena>
+  </s:Towar>
+  <s:Towar Numer="0123">
+    <s:Przedmiot ID="GR3333">
+      <s:Gitara Rodzaj="hawajska">
+        <s:Producent>Endo</s:Producent>
+        <s:Model>HavanaH</s:Model>
+        <s:Opis>Gitara hawajska numer 1 na świecie.</s:Opis>
+      </s:Gitara>
+    </s:Przedmiot>
+    <s:Dostępność>
+      <s:NaZamówienie/>
+    </s:Dostępność>
+    <s:Cena>2000</s:Cena>
+  </s:Towar>
+  <s:Towar Numer="0101">
+    <s:Przedmiot ID="GR0023">
+      <s:Gitara Rodzaj="klasyczna">
+        <s:Producent>Endo</s:Producent>
+        <s:Model>ClassicG</s:Model>
+        <s:Opis>Gitara klasyczna numer 1 na świecie.</s:Opis>
+      </s:Gitara>
+    </s:Przedmiot>
+    <s:Dostępność>
+      <s:LiczbaSztuk>17</s:LiczbaSztuk>
+    </s:Dostępność>
+    <s:Cena>1499.00</s:Cena>
+  </s:Towar>
+  <s:Towar Numer="0999">
+    <s:Przedmiot ID="DC1421">
+      <s:Akcesorium Typ="Kontroler DJ'ski">
+        <s:Producent>Pioneer</s:Producent>
+        <s:Model>DJM2000</s:Model>
+        <s:Opis>Kontroler Pioneer DJM2000 z 2016 roku.</s:Opis>
+      </s:Akcesorium>
+    </s:Przedmiot>
+    <s:Dostępność>
+      <s:NaZamówienie/>
+    </s:Dostępność>
+    <s:Cena>7000</s:Cena>
+  </s:Towar>
+</s:SklepMuzyczny>

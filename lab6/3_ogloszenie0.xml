@@ -1,0 +1,13 @@
+<o:Ogłoszenie xmlns:o="https://www.inf.ug.edu.pl/xsd/ogloszenie">
+  <o:Samochód>
+    <o:Marka>Audi</o:Marka>
+    <o:Silnik>
+      <o:Pojemność>2</o:Pojemność>
+      <o:TypPaliwa>Diesel</o:TypPaliwa>
+    </o:Silnik>
+    <o:RokProdukcji>2015</o:RokProdukcji>
+    <o:Cena>
+      <o:Wartość>30000</o:Wartość>
+    </o:Cena>
+  </o:Samochód>
+</o:Ogłoszenie>

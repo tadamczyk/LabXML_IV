@@ -1,0 +1,30 @@
+table{
+  border-collapse: collapse;
+  border-style: solid;
+  width: 640px;
+  height: 640px;
+}
+
+.center{
+  margin-top: 100px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td{
+  border-collapse: collapse;
+  border-style: solid;
+  width: 80px;
+  height: 80px;
+}
+
+.black{
+  background-color: black;
+  text-align: center;
+}
+
+.white{
+  background-color: white;
+  text-align: center;
+}

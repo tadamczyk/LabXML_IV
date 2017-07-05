@@ -1,0 +1,12 @@
+<!ELEMENT Biblioteka (Książka+)>
+<!ELEMENT Książka (Tytuł, Autorzy, RokWydania)>
+<!ELEMENT Tytuł (#PCDATA)>
+<!ELEMENT Autorzy (Autor+)>
+<!ELEMENT Autor (Imie, Nazwisko)>
+<!ELEMENT Imie (#PCDATA)>
+<!ELEMENT Nazwisko (#PCDATA)>
+<!ELEMENT RokWydania (#PCDATA)>
+<!ATTLIST Książka ISBN CDATA #REQUIRED>
+<!ATTLIST Książka Język CDATA #IMPLIED>
+<!ATTLIST RokWydania NumerWydania CDATA #IMPLIED>
+<!ENTITY brze "Brzechwa-Brzeęczyszczykiewicz.">

@@ -1,0 +1,31 @@
+1.
+* //Film/Tytul/text()
+* //Film[last()]/Tytul/text()
+* //Film[4]/Tytul/text()
+* //Film[.//MinWiek]/Tytul/text()
+* //Aktor[@Nazwisko]/@Nazwisko
+
+2.
+* //Film[RokProdukcji<2017]/Tytul/text()
+* //Film[Dlugosc>90 and Dlugosc<120]/Tytul/text()
+* //Film[.//@Godzina<20]/Tytul/text()
+* //Film[.//Gatunek="Wojenny"]/Obsada/Aktor
+* //Film[(@ID<080000)]/Dlugosc/text()
+* //Film/Obsada/Aktor[(position() mod 2)=1]
+
+3.
+* sum(//Budżet)
+* //Film/string-length(Tytul)
+* //Film/Obsada/count(Aktor)
+* avg(//CenaBiletu)
+* string-join(//Film/(concat(Tytul/text(), ' - ', Projekcja/CenaBiletu/text())), "; ")
+* string-join(//Film/(concat(Gatunek/text(), ' - ', Tytul/text(), ' - ', Rezyser/concat(@Imie, ' ',@Nazwisko))), "; ")
+
+4.
+* //Film[.//Obsada/Aktor[@Nazwisko="Tymon" and @Imie="Naila" or @Nazwisko="Yasamin" and @Imie="Rihard"]]/Tytul/text()
+* //Film[.//Obsada/Aktor[@Nazwisko="Atticus" and @Imie="Valtteri"]]/Gatunek/text()
+* //Film[count(.//Obsada/Aktor)>=3]/Tytul/text()
+* //Film[.//Projekcja/NrSali=3]/Rezyser
+* //Film[.//Projekcja/Czas/Piatek]/Tytul/text()
+* //Film[Dlugosc>100]/Projekcja/Czas/count(*)
+* //Film[.//Rezyser[starts-with(@Nazwisko,"R")]]/Tytul/text()
